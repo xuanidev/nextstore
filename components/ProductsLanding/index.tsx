@@ -39,7 +39,7 @@ export const ProductsLanding = () => {
   return (
     <section className={styles.productsLanding}>
       <h2 className={styles.productsLandingTitle}>
-        NFC&apos;S INTEGRADOS MÁS VENDIDOS:
+        NFCS INTEGRADOS MÁS VENDIDOS:
       </h2>
       <div className={styles.prodcutsLandingCards}>
         {cards.map((card, index) => (
