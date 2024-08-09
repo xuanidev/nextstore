@@ -1,0 +1,19 @@
+.hero{
+    height: 85vh;
+    background-image: url('../../public/images/pexels-mustang-2179483.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+.hero::after{
+    z-index: 1;
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85vh;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.20) 0%, rgba(0, 0, 0, 0.50) 82%, rgba(0, 0, 0, 1) 100%);
+}

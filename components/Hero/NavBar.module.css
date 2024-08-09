@@ -1,0 +1,28 @@
+.navBarContainer{
+    position: relative;
+    color: var(--white);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em;
+    padding-top: 1.5em;
+    z-index: 2;
+}
+.navBarTitle{
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+}
+.navBarNav{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.navBarLink{
+    font-size: 1.5rem;
+    color: var(--white);
+    text-decoration: none; 
+}

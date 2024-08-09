@@ -1,0 +1,22 @@
+.contentHero{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    color: var(--white);
+    padding: 3rem 4rem;
+    z-index: 2;
+}
+.contentHeroTitle{
+    font-size: 4rem;
+    margin-block-start: 0.0em;
+    margin-block-end: 0.0em;
+    font-weight: 400;
+}
+.contentHeroText{
+    font-size: 1.61rem;
+    margin-block-start: 0.0em;
+    margin-block-end: 0.0em;
+    font-weight: 300;
+}
