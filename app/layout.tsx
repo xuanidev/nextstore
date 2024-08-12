@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Raleway } from "@next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/contexts/CartContext";
+import { Footer } from "@/components/Footer/Footer";
+import NavBar from "@/components/NavBar";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -20,8 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={raleway.className}>
+      <body className={`${raleway.className} antialiased bgBody`}>
+        <NavBar />
         <CartProvider>{children}</CartProvider>
+        <Footer />
       </body>
     </html>
   );

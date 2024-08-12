@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400&display=swap');
 
 .productsLanding{
+    background-color: var(--white);
     padding: 3em 4rem;
     display: flex;
     flex-direction: column;

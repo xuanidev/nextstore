@@ -1,23 +1,27 @@
 .navBarContainer{
-    position: relative;
+    position: fixed;
     color: var(--white);
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 4em;
-    padding-top: 1.5em;
+    padding: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     z-index: 2;
+    background-color: #f98505fa;
 }
 .navBarTitle{
     font-family: "Kodchasan", sans-serif;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 3rem;
 }
+
 .navBarNav{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 3rem;
 }
 
@@ -25,4 +29,12 @@
     font-size: 1.5rem;
     color: var(--white);
     text-decoration: none; 
+}
+
+.navBarCart{
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    padding-top: 4px;
 }

@@ -1,4 +1,5 @@
 import styles from "./ContentHero.module.css";
+import { kodchasan } from "@/app/lib/fonts";
 
 export const ContentHero = () => {
   return (

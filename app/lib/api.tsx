@@ -12,11 +12,9 @@ export async function fetchProducts(): Promise<ProductFromApi[]> {
       }
     );
     if (!response.ok) {
-      console.log(response);
       throw new Error("Failed to fetch products");
     }
     const data: ProductFromApi[] = await response.json();
-    console.log(data);
     return data;
   } catch (error) {
     console.log(error);

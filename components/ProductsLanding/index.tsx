@@ -1,5 +1,5 @@
 "use client";
-import { fetchProducts } from "@/utils/api";
+import { fetchProducts } from "@/app/lib/api";
 import { ProductCardProps } from "../../models";
 import { ProductCard } from "./ProductCard";
 import styles from "./ProductsLanding.module.css";

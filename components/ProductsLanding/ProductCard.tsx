@@ -1,12 +1,14 @@
 import Image from "next/image";
 import styles from "./ProductCard.module.css";
+import "./ProductCard.css";
 import { ProductCardProps } from "../../models";
+import { source_sans_3 } from "@/app/lib/fonts";
+import Link from "next/link";
 
 export const ProductCard = (props: ProductCardProps) => {
   const { imgSrc, altImg, title, price } = props;
-  console.log(imgSrc);
   return (
-    <div className={styles.productCard}>
+    <Link href="/" className={styles.productCard}>
       <Image
         src={imgSrc}
         className={styles.productCardImg}
@@ -15,12 +17,12 @@ export const ProductCard = (props: ProductCardProps) => {
         height={400}
       />
       <div className={styles.productCardContent}>
-        <h3 className={`${styles.productCardTitle} raleway-400`}>{title}</h3>
-        <p className={`${styles.productCardPrice} source-sans-3-300`}>
+        <h3 className={`${styles.productCardTitle}`}>{title}</h3>
+        <p className={`${styles.productCardPrice} ${source_sans_3.className} `}>
           Desde {price}
         </p>
       </div>
-    </div>
+    </Link>
   );
 };
 
