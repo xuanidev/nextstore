@@ -10,7 +10,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     z-index: 2;
-    background-color: #f98505fa;
+    background-color: hsla(0, 0%, 7%, 0.9);
 }
 .navBarTitle{
     font-family: "Kodchasan", sans-serif;

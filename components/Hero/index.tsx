@@ -39,7 +39,7 @@ export const Hero = () => {
   }, [lastScrollY, scrollDirection]);
 
   return (
-    <header className={styles.hero}>
+    <header className={`${styles.hero} ${styles.bgBody}`}>
       <div style={{ opacity, transition: "opacity 0.5s ease-out" }}>
         <ContentHero />
       </div>

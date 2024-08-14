@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${raleway.className} antialiased bgBody`}>
+      <body className={`${raleway.className} antialiased body`}>
         <NavBar />
         <CartProvider>{children}</CartProvider>
         <Footer />

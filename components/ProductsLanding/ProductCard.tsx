@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./ProductCard.module.css";
-import "./ProductCard.css";
 import { ProductCardProps } from "../../models";
 import { source_sans_3 } from "@/app/lib/fonts";
 import Link from "next/link";
@@ -8,7 +7,7 @@ import Link from "next/link";
 export const ProductCard = (props: ProductCardProps) => {
   const { imgSrc, altImg, title, price } = props;
   return (
-    <Link href="/" className={styles.productCard}>
+    <Link href="/product/1" className={` ${styles.productCard} ${styles.a} `}>
       <Image
         src={imgSrc}
         className={styles.productCardImg}
