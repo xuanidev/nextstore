@@ -6,9 +6,12 @@ import { EmptyCart } from "../Icons";
 export const NavBar = () => {
   return (
     <div className={styles.navBarContainer}>
-      <span className={`${styles.navBarTitle}  ${kodchasan.className}`}>
+      <Link
+        href="/"
+        className={`${styles.navBarTitle} ${styles.a}  ${kodchasan.className}`}
+      >
         NFC Studio
-      </span>
+      </Link>
       <nav className={styles.navBarNav}>
         <Link href="/" className={styles.navBarLink}>
           TECNOLOGÍA

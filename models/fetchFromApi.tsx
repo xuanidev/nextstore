@@ -3,10 +3,11 @@ export interface Category {
   id: number;
   name: string;
   description: string;
-  createdAt: string;
-  updatedAt: string;
 }
-
+interface ImagesFromApi {
+  id: string;
+  main_img_url: string;
+}
 export interface Product {
   id: number;
   categories: Category[];
@@ -33,4 +34,5 @@ export interface ProductFromApi {
   dimensions: string;
   availables: number;
   puntuation: number;
+  images: ImagesFromApi[];
 }

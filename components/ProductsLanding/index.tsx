@@ -11,6 +11,7 @@ async function getProducts(): Promise<ProductCardProps[]> {
     const data = await fetchProducts();
     const serializedProducts: ProductCardProps[] = data.map(
       (product: ProductFromApi) => ({
+        id: product.id,
         imgSrc: product.main_img_url,
         altImg: product.description,
         title: product.name,
@@ -45,6 +46,7 @@ export const ProductsLanding = () => {
         {cards.map((card, index) => (
           <ProductCard
             key={card.title.concat(index.toString())}
+            id={card.id}
             imgSrc={card.imgSrc}
             altImg={card.altImg}
             title={card.title}

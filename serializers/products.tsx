@@ -1,23 +1,20 @@
-import { Product } from "@/models/fetchFromApi";
+import { ProductPageProps, ImagesProduct } from "@/models";
+import { ProductFromApi } from "@/models/fetchFromApi";
 
-export function serializeProduct(product: any): Product {
+export function serializeProduct(data: ProductFromApi): ProductPageProps {
+  const images: ImagesProduct[] = data.images.map((img) => ({
+    id: img.id,
+    url: img.main_img_url,
+    alt: data.description,
+  }));
+
   return {
-    id: product.id,
-    categories: product.categories.map((category: any) => ({
-      id: category.id,
-      name: category.name,
-      description: category.description,
-      createdAt: category.created_at,
-      updatedAt: category.updated_at,
-    })),
-    name: product.name,
-    description: product.description,
-    price: product.price,
-    createdAt: product.created_at,
-    updatedAt: product.updated_at,
-    mainImg: product.main_img_url,
-    dimensions: product.dimensions,
-    availables: product.availables,
-    puntuation: product.puntuation,
+    id: data.id,
+    imgSrc: data.main_img_url,
+    altImg: data.description,
+    title: data.name,
+    price: parseFloat(data.price),
+    description: data.description,
+    images: images,
   };
 }

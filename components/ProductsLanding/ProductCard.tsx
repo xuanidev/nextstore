@@ -5,9 +5,10 @@ import { source_sans_3 } from "@/app/lib/fonts";
 import Link from "next/link";
 
 export const ProductCard = (props: ProductCardProps) => {
-  const { imgSrc, altImg, title, price } = props;
+  const { id, imgSrc, altImg, title, price } = props;
+  const href = "/product/" + title.split(" ").join("_") + "?prod=" + id;
   return (
-    <Link href="/product/1" className={` ${styles.productCard} ${styles.a} `}>
+    <Link href={href} className={` ${styles.productCard} ${styles.a} `}>
       <Image
         src={imgSrc}
         className={styles.productCardImg}

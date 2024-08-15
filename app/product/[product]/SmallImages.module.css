@@ -1,0 +1,15 @@
+.smallImagesContainer{
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.smallImg{
+    z-index: 1;
+    width: 100px;
+    height: auto;
+}
+.smallImg:hover{
+    cursor: pointer;
+}
